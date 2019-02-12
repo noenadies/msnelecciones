@@ -13,7 +13,7 @@
   padding: 1rem;
   border: 2px solid #ccc;
   /* IMPORTANTE */
-  text-align: center;
+  text-align: justify;
 }
 
 #idmsn{
@@ -47,7 +47,64 @@
 	text-shadow:0px -1px 0px #5b6178;
     width: 100%;
 
-}	</style>
+}
+
+
+
+
+
+#idbtatras {
+
+    
+position: absolute;
+top: 3%;
+left: 5%;
+z-index: 12;
+    backface-visibility: hidden;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+  background: linear-gradient(180deg,#44bbdd 0%,#40b5d6 30%,#30a5c6 65%,#129abc 100%);
+  border-radius: 8px;
+  border: 0px solid #379;
+  border-width: 0px 0px 5px 0px;
+  padding: 9px 15px 6px 15px;
+  box-shadow: inset 0px 1px 3px rgba(100%,100%,100%,0.4);
+    color: #fff;
+  font-size: initial;
+  font-family: Helvetica Neue;
+  font-weight: 900;
+  font-style: normal
+  }
+  #idbtatras > div {
+    color: #999;
+  font-size: 10px;
+  font-family: Helvetica Neue;
+  font-weight: initial;
+  font-style: normal;
+  text-align: center;
+  margin: 0px 0px 0px 0px
+  }
+  #idbtatras > i {
+    color: #fff;
+  font-size: 1em;
+  background: rgba(0,0,0,0.2);
+  border-radius: 100px;
+  border: 0px solid transparent;
+  border-width: 0px 0px 0px 0px;
+  padding: 5px 5px 5px 5px;
+  margin: 0px 0px 0px 10px;
+  position: static;
+  box-shadow: inset 0px 1px 2px rgba(0,0,0,0.4),inset 0px -1px 0px rgba(255,255,255,.5)
+  }
+  #idbtatras > .ld {
+    font-size: initial
+  }
+
+
+
+	</style>
 	</head>
 	<body><br><br><br><br><br><br><br><br>
           
@@ -57,7 +114,12 @@
           <br><br><br>
           <div class="padre">
 <button id="idbtmsn" onclick="onmsn();">enviar mensaje</button>
+
+
           </div>
+
+<button id="idbtatras" onclick="fatras();">Atras</button>
+
             <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
 		<script>
  var msnfire;
@@ -95,6 +157,11 @@ escribemsn(stmsn);
 
 }
 
+
+function fatras(){
+
+    window.location.href="https://noenadies.github.io/proeleciones2/";
+}
 		</script>
 	</body>
 </html>
